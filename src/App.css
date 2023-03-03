@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Augestina";
+  src: local("Augestina"), url(./fonts/Agustina.otf) format("opentype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo_title {
+  font-family: "Augestina";
+  font-size: 45px!important;
+  font-weight: 800;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.f-20 {
+  font-size: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.f-40 {
+  font-size: 40px;
+}
+.icon-lg {
+  font-size: 30px;
+border-radius: 50%;
+}
+.light_blue {
+  color: #11cdef !important;
+}
+.heading{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.bg-skygreen{
+  background-color: #2dce89;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bg-skygreen:hover{
+  transform: translateY(-1px);
+  color: #fff;
+  background-color: #26af74;
+  border-color: #24a46d;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hover:hover{
+  transform: translateY(-4px);
+}
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.nav-link{
+  font-weight: 800;
+  color: aquamarine;
+}
+.nav-link:hover{
+  color: aqua;
+}
+.navbar-nav .nav-link.active{
+  color: #11cdef;
 }
