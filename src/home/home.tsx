@@ -26,34 +26,54 @@ const Home = (props: Props) => {
 
                 <p className="f-20 mt-2">
                   I'm passionate Full Stack web developer having an experience
-                  of web applications. <br/>- 🔭 I’m currently working on **Messaging
-                  app** <br/>- 🌱 I’m currently learning **Solidity, ethersJs,
-                  Hardhat, Flutter** <br /> - 📫 How to reach me
-                  **princeisrael409@gmail.com**
+                  of web applications. <br />- 🔭 I’m currently working on
+                  **Messaging app** <br />- 🌱 I’m currently learning
+                  **Solidity, ethersJs, Hardhat, Flutter** <br /> - 📫 How to
+                  reach me **princeisrael409@gmail.com**
                 </p>
                 <div className="ms-4">
                   <div className="d-flex align-items-center pt-4">
-                    <a href="www.google.com" className="me-4">
+                    <a
+                      href="https://www.facebook.com/favourisrael.taiwo"
+                      target="blank"
+                      className="me-4"
+                    >
                       <IoLogoFacebook
                         style={{ color: "teal", fontSize: "30px" }}
                       />
                     </a>
-                    <a href="www.google.com" className="me-4">
+                    <a
+                      href="https://www.instagram.com/taiwofavourisrael/?igshid=YzgyMTM2MGM%3D"
+                      target="blank"
+                      className="me-4"
+                    >
                       <IoLogoInstagram
                         style={{ color: "teal", fontSize: "30px" }}
                       />
                     </a>
-                    <a href="www.google.com" className="me-4">
+                    <a
+                      href="https://github.com/Izzy4999"
+                      target="blank"
+                      className="me-4"
+                    >
                       <IoLogoGithub
                         style={{ color: "teal", fontSize: "30px" }}
                       />
                     </a>
-                    <a href="www.google.com" className="me-4">
+                    <a
+                      href="https://www.linkedin.com/in/favour-taiwo-8b9b5a200"
+                      target="blank"
+                      className="me-4"
+                    >
                       <IoLogoLinkedin
                         style={{ color: "teal", fontSize: "30px" }}
                       />
                     </a>
-                    <a href="www.google.com" className="me-4">
+                    <a
+                      href="https://twitter.com/GiyuRengoku?s=09"
+                      target="blank"
+                      className="me-4"
+                    >
                       <IoLogoTwitter
                         style={{ color: "teal", fontSize: "30px" }}
                       />

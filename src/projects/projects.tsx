@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../components/navBar";
 import laptop from "../img/laptop-mac-outline.svg";
+import { projectData } from "./projectData";
 
 type Props = {};
 
@@ -21,26 +22,35 @@ const Projects = (props: Props) => {
         <p className="mt-2 ms-2 heading text-info">Projects</p>
       </div>
       <div className="row m-2">
-        <div className="col-md-6">
-          <div
-            className="card border-light shadow-lg m-4 p-4 hover"
-            style={{ width: "18rem;" }}
-          >
-            <div className="card-body m-2">
-              <h5 className="card-title mb-2">title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="www.google" className="btn btn-dark btn-lg me-2">
-                <i className="bi bi-github"></i>
-              </a>
-              <a href="www.google" className="btn bg-skygreen btn-lg">
-                Demo <i className="bi bi-arrow-right"></i>
-              </a>
+        {projectData.map((project, index) => (
+          <div className="col-md-6">
+            <div
+              className="card border-light shadow-lg m-4 p-4 hover"
+              style={{ width: "18rem;" }}
+            >
+              <div className="card-body m-2">
+                <h5
+                  className="card-title mb-2"
+                  style={{ textTransform: "uppercase" }}
+                >
+                  {project.title}
+                </h5>
+                <p className="card-text">{project.description}</p>
+                <a
+                  href={project.githubLink}
+                  className="btn btn-dark btn-lg m-2"
+                >
+                  <i className="bi bi-github"></i>
+                </a>
+                {project.liveSite.length > 1 && (
+                  <a href={project.liveSite} target="blank" className="btn bg-skygreen btn-lg m-2">
+                    Demo <i className="bi bi-arrow-right"></i>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import logo from "../briefcase-duotone.svg";
-import exp from "../img/dusecaSoftware.jpg";
 import React from "react";
 import Navigation from "../components/navBar";
 import { experienceData } from "./experienceData";

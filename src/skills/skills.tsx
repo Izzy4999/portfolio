@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import GreetingLottie from "../components/displayLottie";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { skills } from "./skill";
-import { Fade, Slide, Roll } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import Navigation from "../components/navBar";
 
 const Skills = () => {
@@ -21,12 +21,12 @@ const Skills = () => {
       {skills.map((skill, index) => (
         <div className="row mb-3" key={index}>
           <div className="col-md-6 order-2 order-lg-1 mt-4">
-            <Fade direction="left" delay={2000} triggerOnce>
+            <Fade direction="left" delay={500} triggerOnce>
               <GreetingLottie animationPath={skill.displaylottie} />
             </Fade>
           </div>
           <div className="col-md-6 mt-4 order-1 order-lg-2">
-            <Slide direction="right" delay={2000} triggerOnce>
+            <Slide direction="right" delay={500} triggerOnce>
               <h3 className="text-center">{skill.title}</h3>
               <div className="d-flex justify-content-center flex-wrap">
                 {skill.softwareSkills.map((skill, index) => (
