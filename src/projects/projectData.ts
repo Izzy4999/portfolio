@@ -20,7 +20,7 @@ export const projectData = [
   {
     title: "social-frontend",
     description: "View of the simple social",
-    githubLink: "https://github.com/Izzy4999/social-front-end",
+    githubLink: "https://social-front-end-pi.vercel.app/",
     liveSite: "https://fiit-tech-social-app.web.app/",
   },
   {
@@ -34,5 +34,11 @@ export const projectData = [
     description: "A single page react app",
     githubLink: "https://github.com/Izzy4999/gpt_3-project",
     liveSite: "https://gpt-3-project-one.vercel.app/",
+  },
+    {
+    title: "Vidly",
+    description: "A simple movie collection app",
+    githubLink: "https://github.com/Izzy4999/vidly_frontend_cod",
+    liveSite: "https://vidly-frontend-ten.vercel.app/",
   },
 ];
